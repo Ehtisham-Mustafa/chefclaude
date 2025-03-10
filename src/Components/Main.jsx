@@ -16,7 +16,7 @@ export default function Main(){
         <main>
         <form onSubmit={handlesubmit} className="add-ingredient-form">
             <input type="text" name="ingredient" placeholder="e.g. oranges" aria-label="Add ingredient"/>
-            <button>Add Ingredients</button>
+            <button>Add Ingredient</button>
         </form>
         <ul>
                 {ingredientListItems}
