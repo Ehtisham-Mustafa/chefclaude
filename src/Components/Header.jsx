@@ -8,7 +8,7 @@ export default function Header(){
             <div className="image-container">
             <img className="img" src={logoChef} />
             </div>
-            <h1>Chef Claude</h1>
+            <h1>Chef Claudee</h1>
             
       </header>
     )
