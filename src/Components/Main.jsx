@@ -10,7 +10,7 @@ export default function Main(){
         const formData=new FormData(e.currentTarget)
         const newIngredient=formData.get("ingredient")
         ingredients.push(newIngredient)
-        console.log(ingredients)
+        // console.log(ingredients)
     }
     return(
         <main>
