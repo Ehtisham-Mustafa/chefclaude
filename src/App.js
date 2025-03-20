@@ -4,6 +4,8 @@ import Main from './Components/Main';
 import Pads from './Components/Pads';
 import padsData from './DataSource/pads';
 import React from 'react';
+import StarWar from './Components/StarWar'
+import Meme from './Components/Meme'
 
 function App() {
   const [pads,setPads]=React.useState(padsData)
@@ -19,13 +21,15 @@ function App() {
 ))
   return (
     <main>
-      <Header/>
-      <Main/>
+      {/* <Header/>
+      <Main/> */}
 
       {/* <div className="pad-container">
       {buttonElements}
         </div> */}
-     
+
+        {/* <StarWar/> */}
+     <Meme/>
     </main>
   );
 }
