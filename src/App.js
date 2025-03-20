@@ -19,12 +19,12 @@ function App() {
 ))
   return (
     <main>
-      {/* <Header/>
-      <Main/> */}
+      <Header/>
+      <Main/>
 
-      <div className="pad-container">
+      {/* <div className="pad-container">
       {buttonElements}
-        </div>
+        </div> */}
      
     </main>
   );
