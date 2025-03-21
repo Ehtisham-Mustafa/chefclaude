@@ -37,8 +37,8 @@ function App() {
         </div> */}
 
       {/* <StarWar/> */}
-      {/* <Meme/> */}
-      <WindowTracker />
+      <Meme/>
+      {/* <WindowTracker /> */}
     </main>
   );
 }

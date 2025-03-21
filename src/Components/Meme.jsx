@@ -9,10 +9,21 @@ export default function Meme (){
     const [allMemes,setAllMemes]=React.useState([])
         
     React.useEffect(()=>{
-    fetch(`https://api.imgflip.com/get_memes`).then(res=>res.json())
-    .then(data=>setAllMemes(data))
+    fetch("https://api.imgflip.com/get_memes")
+    .then(res=>res.json())
+    .then(data=>setAllMemes(data.data.memes))
 
     },[])
+
+    function getMemeImage(event){
+        const randomNumber=Math.floor(Math.random()*allMemes.length)
+        const newMemeUrl=allMemes[randomNumber].url
+
+        setMeme(prevMeme=>({
+            ...prevMeme,
+            imageUrl:newMemeUrl 
+        }))
+    }
 
     function handleChange(event){
             const{value,name}=event.currentTarget
@@ -30,7 +41,7 @@ export default function Meme (){
                <label>Bottom Text
                 <input type="text" placeholder='Walk into Mordor' name="bottomText" onChange={handleChange} value={meme.bottomText}/>
                </label>
-               <button>Get new Meme image </button>
+               <button onClick={getMemeImage}>Get new Meme image </button>
             </div>
             <div className="meme">
                 <img src={meme.imageUrl}/>
