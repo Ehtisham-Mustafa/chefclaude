@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Pads from "./Components/Pads";
@@ -7,7 +7,7 @@ import React from "react";
 import StarWar from "./Components/StarWar";
 import Meme from "./Components/Meme";
 import WindowTracker from "./Components/WindowTracker";
-
+import Tenzie from "./Components/Tenzie";
 function App() {
   const [pads, setPads] = React.useState(padsData);
 
@@ -28,18 +28,19 @@ function App() {
     />
   ));
   return (
-    <main>
+    <>
       {/* <Header/>
       <Main/> */}
-
       {/* <div className="pad-container">
       {buttonElements}
         </div> */}
 
       {/* <StarWar/> */}
-      <Meme/>
+      {/* <Meme/> */}
       {/* <WindowTracker /> */}
-    </main>
+<Tenzie/>
+
+    </>
   );
 }
 
