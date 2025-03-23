@@ -1,6 +1,87 @@
 *{
   box-sizing: border-box;
 }
+
+
+body {
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 20px;
+  background-color: #262626;
+  color: #D9D9D9;
+  margin: 0;
+}
+
+header{
+  text-align: center;
+}
+
+header > h1{
+  font-size: 1.25rem;
+  font-weight:500;
+  color: #F9F4DA;
+}
+header > p {
+  font-size:0.875rem;
+  max-width: 350px;
+  color: #8E8E8E;
+
+}
+section.game-status{
+  background-color: #10A95B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F9F4DA;
+  border-radius: 4px;
+  margin-block: 30px;
+}
+
+section.game-status > h2{
+font-size:1.25rem;
+margin: 5px;
+}
+section.game-status > p{
+  margin: 5px;
+}
+
+section.language-chips{
+  display: flex;
+  flex-wrap:nowrap;  
+  gap:5px;
+  justify-content: center;
+  max-width: 350px;
+  margin-bottom: 36px;
+}
+span.chip{
+  border-radius: 3px;
+  padding:4.5px;
+
+}
+
+section.word{
+  display: flex;
+  justify-content: center;
+  gap:2px;
+}
+section.word >span{
+  height: 40px;
+  width:40px;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.125rem;
+  border-bottom: 1px solid #f9f4da;
+}
+/*
+
+
+                                                Tenzies Start Game
+
 body {
   margin:0;
   background-color: #0B2434;
@@ -44,7 +125,7 @@ main{
 
 .dice-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(5, 1fr); 
   gap:10px;
   margin-bottom: 40px;
 }  
@@ -73,6 +154,12 @@ button.roll-dice{
   font-size:1.2rem;
 
 }
+*/
+
+
+/*                              Tenzie End Gane     */
+
+
 /* main {
   display: flex;
   justify-content: center;

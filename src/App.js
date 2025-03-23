@@ -8,6 +8,7 @@ import StarWar from "./Components/StarWar";
 import Meme from "./Components/Meme";
 import WindowTracker from "./Components/WindowTracker";
 import Tenzie from "./Components/Tenzie";
+import AssemblyEndGame from "./Components/AssemblyEndGame"
 function App() {
   const [pads, setPads] = React.useState(padsData);
 
@@ -38,8 +39,8 @@ function App() {
       {/* <StarWar/> */}
       {/* <Meme/> */}
       {/* <WindowTracker /> */}
-<Tenzie/>
-
+{/* <Tenzie/> */}
+<AssemblyEndGame/>
     </>
   );
 }
